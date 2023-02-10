@@ -1,0 +1,65 @@
+﻿
+    <style>
+        .a {
+            position: absolute;
+            left: 50%;
+        }
+
+        .c {
+            position: absolute;
+            left: 38%;
+        }
+        .b{
+            background-color:yellowgreen;
+        }
+    </style>
+
+    <body class="b">
+
+
+        <form  action="/Home/Index" method="post">
+
+            <div>
+                <h1 class="c">Currency Converter</h1>
+            </div><br><br><br><br><br>
+
+
+
+
+
+            <div>
+                <label class="c" for="">Source Currency :</label>
+                <select class="a" name="SourceCurrency" id="">
+                    <option value="selectcurrency">Select Currency</option>
+                    <option value="usd">US Dollar</option>
+                    <option value="sgd">SG Dollar</option>
+                    <option value="mmk">Myanmar Money Kyat</option>
+                </select>
+            </div><br><br>
+            <div>
+                <label class="c" for="">Destination Currency :</label>
+                <select class="a" name="DestinationCurrency" id="">
+                    <option value="selectcurrency">Select Currency</option>
+                    <option value="usd">US Dollar</option>
+                    <option value="sgd">SG Dollar</option>
+                    <option value="mmk">Myanmar Money Kyat</option>
+                </select>
+            </div><br><br>
+            <div>
+                <label class="c" for="">Amount :</label>
+                <input class="a" type="text" name="Amount">
+            </div><br><br>
+            <div>
+                <label class="c" for="">Result :</label>
+                <input class="a" type="text" value=@ViewBag.FinalResult>
+            </div><br><br>
+
+            <div>
+                <input class="a" type="submit" value="submit">
+            </div>
+
+
+        </form>
+
+
+    </body>
